@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  border: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(160, 64, 0);
+}
+header a {
+  font-size: 50px;
+  padding: 15px;
+  color: rgb(241, 196, 15);
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  font-family: arial black;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(241, 196, 15);
+}
+main h2 {
+  display: flex;
+  color: rgb(243, 156, 18);
+  font-family: arial black;
+}
+.uno {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 5% 25% 5% 25%;
+  text-align: justify;
+}
+.uno img {
+  width: 300px;
+}
+.dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(214, 234, 248);
+  padding: 30px;
+}
+.dos img {
+  width: 50%;
+}
+.tres {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.caja {
+  padding: 5px;
+  border: 4px solid rgb(241, 196, 15);
+  margin: 70px;
+  border-radius: 50px;
+}
+.img img {
+  display: flex;
+  width: 300px;
+  border-radius: 100%;
+  padding: 30px;
+}
+.contenido h3 {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px 10px 0px;
+}
+.contenido {
+  padding: 0px 29px 20px 29px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenido a {
+  text-decoration: none;
+  color: rgb(243, 156, 18);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(160, 64, 0);
+  color: rgb(241, 196, 15);
+  font-family: arial black;
+  padding: 0px 0px 0px 20px;
+}
+footer nav ul {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  font-family: arial black;
+}
+footer nav ul li {
+  list-style: none;
+  color: rgb(241, 196, 15);
+}
+a i.fa-solid.fa-bomb {
+  position: fixed;
+  bottom: 100px;
+  right: 6px;
+  background-color: rgb(241, 196, 15);
+  border: 20px solid rgb(241, 196, 15);
+  border-radius: 100%;
+}
+footer a i.fa-solid.fa-bomb {
+  font-size: 35px;
+  color: black;
+}
+#check {
+  display: none;
+}
+.checkbtn {
+  font-size: 25px;
+  color: rgb(241, 196, 15);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.formu{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 500px 0px 500px;
+}
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"]  
+{
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+
+  .form-row button {
+      font-size: 16px;
+      font-weight: bold;
+    
+    
+      color: #ffffff;
+      background-color: #5995da;
+    
+    
+      border: none;
+      border-radius: 3px;
+    
+    
+      padding: 10px 40px;
+      cursor: pointer;
+    }
+    
+    
+    .form-row button:hover {
+      background-color: #76aeed;
+    }
+    
+    
+    .form-row button:active {
+      background-color: #407fc7;
+    }
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+  }
+  #encabezado ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(160, 64, 0);
+    text-align: center;
+    flex-direction: column;
+
+    top: 73px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+  #check:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+  #encabezado nav ul li {
+    display: block;
+    line-height: 30px;
+  }
+  #encabezado nav ul li {
+    font-size: 20px;
+  }
+  .uno {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .uno img {
+    width: 200px;
+  }
+  .tres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .caja {
+    padding: 0px;
+    margin: 20px;
+  }
+}
